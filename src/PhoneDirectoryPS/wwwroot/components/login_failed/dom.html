@@ -1,0 +1,11 @@
+<div class="login-failed">
+    <div class="title alert alert-danger" role="alert">
+        <span class="fa fa-info-circle"></span>
+        {{title}}
+    </div>
+    <div class="list" [innerHtml]="reason">
+    </div>
+    <div>
+        <input type="button" class="btn btn-simple " (click)="goBack()" value="Go back">
+    </div>
+</div>

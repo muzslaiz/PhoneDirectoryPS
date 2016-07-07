@@ -1,0 +1,30 @@
+.login-failed .title {
+    font-size:14px;
+}
+.login-failed .list-title {
+    margin-left:20px;
+}
+.login-failed ul {
+    margin-left:50px;
+    list-style-type: unset;
+    font-size: 90%;
+}
+.login-failed li {
+    line-height:20px;
+    padding-bottom:10px;
+}
+.login-failed .alert-danger, .alert-error {
+    border-width: 1px 0;
+    border-radius: 0;
+    border-color: #d2b2b2;
+    color: #911;
+}
+.login-failed .btn-simple {
+    margin-left:20px;
+    background-image:none;
+    background-repeat: repeat no-repeat;
+    border-color: rgba(0, 0, 0, 0.098) rgba(0, 0, 0, 0.098) rgba(0, 0, 0, 0.247);
+    border-radius:0;
+    color: #333333;
+    text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.247);
+}

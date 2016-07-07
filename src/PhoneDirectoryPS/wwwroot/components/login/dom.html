@@ -1,0 +1,74 @@
+<div id="bg-image"></div>
+<div id="bg-wrapper"></div>
+
+<div id="loginForm">
+
+    <div class="LoginHeaderBorder">
+        <table class="LoginHeader">
+            <tbody>
+            <tr>
+                <td >
+                    <div class="LoginHeaderLogo">
+                        <div class="circle"></div>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="LayoutTemplate">
+        <div class="accountInfo">
+            <table class="login">
+                <tbody>
+                    <tr>
+                        <td class="labels">
+                            <label id="LoginUser_UserNameLabel" for="LoginUser_UserName" class="login-label">Username:</label>
+                        </td>
+                        <td class="inputs">
+                            <input type="text" class="textEntry login-input" id="LoginUser_UserName" name="LoginUser$UserName" autofocus>
+                            <span style="visibility:hidden;" class="Validator" id="LoginUser_UserNameValidator">Invalid Username</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="labels">
+                            <label id="LoginUser_PasswordLabel" for="LoginUser_Password" class="login-label">Password:</label>
+                        </td>
+                        <td class="inputs">
+                            <input type="password" class="passwordEntry regex login-input" id="LoginUser_Password" name="LoginUser$Password">
+                            <span style="visibility:hidden;" class="Validator" id="LoginUser_PasswordValidator">Password does not meet requirements.</span>
+                            <br>
+                        </td>
+                        <td class="passwordInfo">
+                            <i data-toggle="tooltip" data-html="true"
+                               data-title="Password requirements: <br/>Minimum length 8 character.<br/>At least two different type from: number, lower-case and upper-case or special character<br /> Illegal characters: ' @"
+                               class="passwordInfoIcon icon-info-sign fa fa-info-circle" data-hasqtip="0"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <table style="width:100%;height:6px;">
+            <tbody>
+            <tr>
+                <td style="width:10%" class="colored-line bg-orange-light"></td>
+                <td style="width:20%" class="colored-line bg-orange-medium"></td>
+                <td style="width:30%" class="colored-line bg-orange-dark"></td>
+                <td style="width:40%" class="colored-line bg-blue"></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div class="submitButton">
+            <div class="LoginButton_changepw">
+                <input type="submit" class="right_floated btn btn-primary" id="LoginUser_LoginButton"
+                       (click)="login()" value="Sign in">
+                <a style="display:inline-block;height:15px;width:115px;"
+                   class="changepw" id="LoginUser_changepw">Change Password</a>
+            </div>
+        </div>
+    </div>
+
+
+</div>

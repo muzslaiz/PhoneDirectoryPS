@@ -1,0 +1,70 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <span class="pull-left">
+            <div class="LoginHeaderLogo">
+                <div class="circle"></div>
+            </div>
+        </span>
+        <span class="pull-left margin-left">
+            <h3>Phone directory</h3>
+        </span>
+    </div>
+</div>
+<br />
+<div id="phonedirectory" class="container-fluid">
+
+    <div class="row">
+        <div class="col-sm-6 col-md-6 padding-left-null">
+            <div class="navbar-form margin-null" role="search">
+                <div class="input-group width-max">
+                    <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term"
+                        [(ngModel)]="searchedText" (ngModelChange)="searchedTextChanged()">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit" (click)="searchedTextChanged()"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="row scollable-pd" id="scollable-pd" (scroll)="onScroll($event)">
+        <div *ngFor="let person of filteredPersons" class="col-xs-12 col-sm-6 col-md-5 col-lg-4 card">
+            <div class="card-title row">
+                <span class="pull-left">{{person.FullName}}</span>
+                <span class="pull-right">{{person.StaffCode}}</span>
+            </div>
+            <a class="img-card" href="#">
+                <img src="https://inside.process-solutions.hu/PSGalery/PSGalery_small/{{person.Photo}}" />
+            </a>
+            <div class="card-content col-xxs-12 col-xs-8 col-sm-7 col-md-8 col-lg-8">
+                <div class="">
+                    {{person.Position}}
+                </div>
+                <div class="">
+                    Phone: {{person.mobile}}, {{person.extension}}
+                </div>
+                <div class="">
+                    {{person.email}}
+                </div>
+                <div class="">
+                    Entrance: {{person.entrance}}
+                </div>
+                <div class="">
+                    Date of exit: {{person.end}}
+                </div>
+                <div class="">
+                    Contract: {{person.contract}}
+                </div>
+                <div class="">
+                    {{person.Conmpany}}
+                </div>
+                <div class="">
+                    {{person.Status}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

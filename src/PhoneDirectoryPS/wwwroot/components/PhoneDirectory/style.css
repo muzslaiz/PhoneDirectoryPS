@@ -1,0 +1,118 @@
+input{
+    height: 28px;
+}
+
+.card {
+    display: block;
+    margin: 5px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    transition: box-shadow .25s;
+    padding-bottom: 15px;
+}
+.card:hover {
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.img-card {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 120px;
+    margin-top: 10px;
+}
+.img-card img{
+    object-fit:none;
+    transition: all .25s ease;
+}
+.card-content {
+    padding: 5px 15px 15px;
+    text-align: left;
+}
+.card-title {
+    font-weight: 700;
+    margin-top: 0;
+    padding-top: 10px;
+}
+.card-title a {
+    color: #000;
+    text-decoration: none !important;
+}
+.card-read-more {
+    border-top: 1px solid #D4D4D4;
+}
+.card-read-more a {
+    text-decoration: none !important;
+    padding:10px;
+    font-weight:600;
+    text-transform: uppercase
+}
+.card-title span:first-child{
+    margin-left: 15px;
+}
+.card-title span:last-child{
+    margin-right: 15px;
+}
+.padding-left-null{
+    padding-left: 0;
+}
+
+.LoginHeader {
+    height: 75px;
+    width: 100%;
+}
+.LoginHeaderLogo {
+    background: rgba(0, 0, 0, 0) url("/assets/img/header-logo-in.png") no-repeat scroll center top / contain ;
+    height: 54px;
+    padding-left: 10px;
+    width: 160px;
+    margin-top: 10px;
+}
+.LoginHeaderLogo div.circle{
+    background-image: url("/assets/img/header-logo-out.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 100%;
+    margin: auto 0;
+    position: relative;
+    top: 0;
+    transition: transform 1s ease 0s;
+    width: 54px;
+}
+.LoginHeaderLogo:hover div.circle{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+}
+.margin-left{
+    margin-left: 15px;
+}
+.scollable-pd{
+    height: calc(100vh - 190px);
+    height: -moz-calc(100vh - 190px);
+    height: -webkit-calc(100vh - 190px);
+    display: block;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body{
+    overflow: hidden;
+}
+.margin-null{
+    margin: 0;
+}
+.width-max{
+    width: 100%;
+}
+
+@media (max-width: 384px) {
+    .scollable-pd{
+        height: calc(100vh - 230px);
+        height: -moz-calc(100vh - 230px);
+        height: -webkit-calc(100vh - 230px);
+    }
+}

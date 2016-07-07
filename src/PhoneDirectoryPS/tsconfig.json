@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "system",
+    "jsx":"react",
+    "moduleResolution":"node",
+    "emitDecoratorMetadata":true,
+    "experimentalDecorators":true,
+    "sourceMap": true
+  },
+  "exclude": [
+    "wwwroot/moment",
+    "wwwroot/reflect-metadata",
+    "wwwroot/zone.js",
+    "node_modules",
+    "typings/main",
+    "typings/main.d.ts"
+
+  ]
+}
