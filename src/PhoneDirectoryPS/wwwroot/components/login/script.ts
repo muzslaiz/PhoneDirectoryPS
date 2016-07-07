@@ -1,6 +1,6 @@
 import {Component, ViewEncapsulation, ElementRef, AfterViewInit} from '@angular/core';
 import {ROUTER_DIRECTIVES, Router} from '@angular/router';
-import {TOOLTIP_DIRECTIVES} from '../../../node_modules/ng2-bootstrap/ng2-bootstrap';
+import {TOOLTIP_DIRECTIVES} from '../../node_modules/ng2-bootstrap/ng2-bootstrap';
 
 declare var $:JQueryStatic;
 

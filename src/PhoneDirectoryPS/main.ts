@@ -10,7 +10,7 @@ import {Login} from './components/login/script';
 @Component(
 {
     selector: 'main',
-    templateUrl: './main.html',
+    templateUrl: 'main.html',
     directives:[ROUTER_DIRECTIVES]
 })
 

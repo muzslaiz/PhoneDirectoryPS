@@ -52,7 +52,7 @@ System.register(['@angular/http', '@angular/core', '@angular/platform-browser-dy
                 Main = __decorate([
                     core_1.Component({
                         selector: 'main',
-                        templateUrl: './main.html',
+                        templateUrl: 'main.html',
                         directives: [router_1.ROUTER_DIRECTIVES]
                     }), 
                     __metadata('design:paramtypes', [common_1.Location])
